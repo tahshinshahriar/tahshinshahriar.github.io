@@ -2,8 +2,8 @@
 
 $host = "localhost";
 $database = "tshahriar";
-$user = "*****";
-$password = "******";
+$user = "root";
+$password = "TSIhfaz/108325";
 
 $connect = mysqli_connect($host, $user, $password, $database) 
 or die(mysqli_error());

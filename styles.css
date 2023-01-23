@@ -19,7 +19,7 @@
 }
 body{
     background-color: var(--color-primary);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
     font-size: 1.1rem;
     color: var(--color-white);
     transition: 0.4s ease-in-out;
@@ -242,7 +242,7 @@ section{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-right: 18rem;
+    padding-right: 15em;
 }
 .right-header .name{
     font-size: 2.5rem;
@@ -250,8 +250,10 @@ section{
 .right-header .name .text1{
     color: var(--color-secondary);
 }
-p{
-    margin: 1.5rem 0;
+.right-header p{
+    display: block;
+    width: 100%;
+    padding: 2rem 0;
     line-height: 2rem;
 }
 
@@ -260,7 +262,8 @@ p{
     text-align: center;
 }
 .about-data{
-    margin-bottom: 3rem;
+    padding: 1em 0 3em 0;
+    line-height: 1.8rem;
 }
 .abt-text{
     border: 1px solid var(--color-grey-5);
@@ -749,27 +752,43 @@ input[type="submit"] {
     }
 }
 @media screen and (max-width:600px) {
-    
+
     .section{
         padding: 2.5em;
     }
     .sec2{
-        padding-bottom: 4em !important;
+        padding: 2em 4em 4em 4em !important;
+        font-size: 70%;
+
+    }
+    .sec3{
+        padding: 2em 3em 0 3em ;
     }
     .header-content{
         grid-template-columns: 1fr;
         padding: 1rem;
     }
     .right-header{
-        padding: 0  0.5rem;
         justify-content: unset !important;
     }
+    .right-header .name{
+        font-size: 1.5em;
+    }
+    .right-header p{
+        font-size: 0.85em;
+    }
+    .btn-con{
+        width: 80%;
+    }
+    .btn-con a{
+        font-size: 0.54em;
+    }
+    
     .left-header .image{
         top: 10%;
+        padding-bottom: 1em;
     }
-    .right-header h1{
-        font-size: 2.2em !important;
-    }
+   
     .h-shape{
         background-color: var(--color-primary);
 
@@ -783,13 +802,23 @@ input[type="submit"] {
     .contact-item{
         flex-direction: column;
         align-items: center;
+        padding-bottom: 1em;
     }
+    .iconss{
+        padding-bottom: 0.5em;
+    }
+
     .content-con{
         flex-direction: column;
+        padding-top: 0;
     }
     .right-con{
         padding-bottom: 1.5em;
     }
+    .contact-icons{
+        font-size: 1.5em;
+    }
+
 
     .navonoff{
         display: none;
@@ -813,25 +842,31 @@ input[type="submit"] {
         height: 40px;
     }
     .qcontainer{
-        padding-bottom: 3.5em;
+        padding-bottom: 2.5em;
     }
-
-    
+    .q-tabs .tab-buttons{
+        font-size: 1.2em;
+    }
+   
     .qdata{
         grid-column-gap: 0;
-        font-size: 1em;
+        font-size: 0.6em;
     }
+    .qdata .qsubtitle {
+        font-size: 0.8em;
+    }
+
     .portcontainer {
         grid-template-columns: 1fr!important;
         grid-row-gap: 1.5em;
         padding-bottom: 4em;
     }
-        .portdata .portfront{
-            font-size: 0.6em;
-        }
-                .right-header {
-                    padding-right: 0.5rem !important;
-                }
+    .portdata .portfront{
+        font-size: 0.6em;
+    }
+    .right-header {
+        padding-right: 0.5rem !important;
+    }
     
 }
 @media screen and (max-width:950px) and (min-width:600px) {
@@ -856,13 +891,25 @@ input[type="submit"] {
     .conoff{
             display: block;
         }
-        .left-header .image{
-            display: none;
-        }
-        .right-header {
-            padding-top: 2em;
-            padding-bottom: 2em;
-        }
+    .left-header .image{
+        display: none;
+    }
+
+    .right-header {
+        padding-bottom: 2em;
+    }
+
+    .right-header .name{
+        font-size: 1.5em;
+    }
+    .right-header p{
+        font-size: 0.9em;
+    }
+    .btn-con{
+        font-size: 0.5em;
+    }
+
+
 
     }
 @media screen and (max-width:900px) {
